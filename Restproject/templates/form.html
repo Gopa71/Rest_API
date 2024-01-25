@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid c1" >
+        <div class="row">
+            <div class="col-lg-6">
+                  <form action="" method="post">
+                                {% csrf_token %}
+    
+                      <label for="task">Task:</label>
+                      <input type="text" name="task" value="{{data.task}}" placeholder="enter your task">
+                      <label for="priority">Priority:</label>
+                      <input type="number" name="priority" value="{{data.priority}}" placeholder="enter your priority">
+                      <br> 
+                      
+                    <button type="submit" class="btn btn-success">Add your Todo</button>
+    
+                    </form>
+        
+                    
+            </div> 
+            </div>
+    </div>
+</body>
+</html>

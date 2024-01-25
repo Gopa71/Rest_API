@@ -1,0 +1,26 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ToDo</h1>
+     <input type="text" placeholder="Add Task" id="task">
+    <input type="number" placeholder="Priority" id="priority">
+    <button onclick="frm()">Add</button>
+    <H1>Your Task Is</H1>
+    <table id="ls">
+        <thead>
+            
+        </thead>
+        
+    </table> 
+ 
+    
+    <script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>
